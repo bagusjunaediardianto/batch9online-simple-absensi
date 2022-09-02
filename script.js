@@ -46,6 +46,11 @@ const renderToHTML = () => {
 
 const handleDelete = (i) => {
   // console.info(i);
+  let confDelete = confirm(`apakah anda yakin akan menghapus data ${i}`);
+
+  if (!confDelete) {
+    return;
+  }
   absensiData.splice(i, 1);
 
   renderToHTML();
