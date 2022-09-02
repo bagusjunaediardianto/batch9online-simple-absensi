@@ -46,7 +46,7 @@ const renderToHTML = () => {
 
 const handleDelete = (i) => {
   // console.info(i);
-  let confDelete = confirm(`apakah anda yakin akan menghapus data ${i}`);
+  let confDelete = confirm(`apakah anda yakin akan menghapus data ${i + 1}`);
 
   if (!confDelete) {
     return;
